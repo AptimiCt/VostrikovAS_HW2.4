@@ -12,6 +12,9 @@
 		61FC111722F4D7DA002626DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FC111522F4D7DA002626DA /* Main.storyboard */; };
 		61FC111922F4D7DD002626DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FC111822F4D7DD002626DA /* Assets.xcassets */; };
 		61FC111C22F4D7DD002626DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FC111A22F4D7DD002626DA /* LaunchScreen.storyboard */; };
+		61FC112822F637E2002626DA /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC112722F637E2002626DA /* AboutMeViewController.swift */; };
+		61FC112A22F63DF7002626DA /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC112922F63DF7002626DA /* HobbyViewController.swift */; };
+		61FC112E22F73F7C002626DA /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC112D22F73F7C002626DA /* ProgressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		61FC111822F4D7DD002626DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61FC111B22F4D7DD002626DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61FC111D22F4D7DD002626DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FC112722F637E2002626DA /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		61FC112922F63DF7002626DA /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		61FC112D22F73F7C002626DA /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		61FC111022F4D7DA002626DA /* VostrikovAS_HW2.4 */ = {
 			isa = PBXGroup;
 			children = (
-				61FC111122F4D7DA002626DA /* AppDelegate.swift */,
-				61FC111322F4D7DA002626DA /* ViewController.swift */,
-				61FC111522F4D7DA002626DA /* Main.storyboard */,
-				61FC111822F4D7DD002626DA /* Assets.xcassets */,
-				61FC111A22F4D7DD002626DA /* LaunchScreen.storyboard */,
-				61FC111D22F4D7DD002626DA /* Info.plist */,
+				61FC112322F4D7F3002626DA /* View */,
+				61FC112622F4D864002626DA /* Controller */,
+				61FC112422F4D816002626DA /* Supporting Files */,
+				61FC112522F4D842002626DA /* Resourses */,
 			);
 			path = VostrikovAS_HW2.4;
+			sourceTree = "<group>";
+		};
+		61FC112322F4D7F3002626DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61FC111A22F4D7DD002626DA /* LaunchScreen.storyboard */,
+				61FC111522F4D7DA002626DA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61FC112422F4D816002626DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61FC111D22F4D7DD002626DA /* Info.plist */,
+				61FC111122F4D7DA002626DA /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61FC112522F4D842002626DA /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				61FC111822F4D7DD002626DA /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		61FC112622F4D864002626DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61FC111322F4D7DA002626DA /* ViewController.swift */,
+				61FC112722F637E2002626DA /* AboutMeViewController.swift */,
+				61FC112922F63DF7002626DA /* HobbyViewController.swift */,
+				61FC112D22F73F7C002626DA /* ProgressViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61FC111422F4D7DA002626DA /* ViewController.swift in Sources */,
+				61FC112822F637E2002626DA /* AboutMeViewController.swift in Sources */,
 				61FC111222F4D7DA002626DA /* AppDelegate.swift in Sources */,
+				61FC112E22F73F7C002626DA /* ProgressViewController.swift in Sources */,
+				61FC112A22F63DF7002626DA /* HobbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BPW3NPX5G;
-				INFOPLIST_FILE = VostrikovAS_HW2.4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VostrikovAS_HW2.4/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BPW3NPX5G;
-				INFOPLIST_FILE = VostrikovAS_HW2.4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VostrikovAS_HW2.4/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
