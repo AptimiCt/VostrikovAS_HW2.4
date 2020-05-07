@@ -12,10 +12,6 @@ class AboutMeViewController: UIViewController {
 
     @IBOutlet var fotoView: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillLayoutSubviews() {
         fotoView.layer.cornerRadius = fotoView.frame.size.width / 2
     }

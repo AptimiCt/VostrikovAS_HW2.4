@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +22,7 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Lay-ZZ-EOg" kind="show" id="NWt-pW-dku"/>
+                                    <segue destination="Lay-ZZ-EOg" kind="presentation" modalPresentationStyle="fullScreen" id="NWt-pW-dku"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8i-z5-OJ1">
@@ -60,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ln-4G-g20">
-                                <rect key="frame" x="20" y="163" width="280" height="242"/>
+                                <rect key="frame" x="20" y="143" width="280" height="282"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.52941176470588236" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellHobby" id="ryQ-vH-nmq">
@@ -79,7 +77,9 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="C1Y-as-RvN" secondAttribute="bottom" constant="12.5" id="5Mc-Nd-Yby"/>
                                                 <constraint firstItem="C1Y-as-RvN" firstAttribute="leading" secondItem="fsh-dL-6bB" secondAttribute="leading" constant="8" id="7lX-1C-C8K"/>
+                                                <constraint firstItem="C1Y-as-RvN" firstAttribute="top" secondItem="fsh-dL-6bB" secondAttribute="top" constant="12.5" id="ORy-Fm-3z7"/>
                                                 <constraint firstItem="C1Y-as-RvN" firstAttribute="centerY" secondItem="fsh-dL-6bB" secondAttribute="centerY" id="WHv-BX-7Ub"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -92,7 +92,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хобби" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny1-gS-MIF">
-                                <rect key="frame" x="134.5" y="95" width="51" height="21"/>
+                                <rect key="frame" x="134.5" y="75" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-OA-Mz6">
-                                <rect key="frame" x="16" y="65" width="288" height="454"/>
+                                <rect key="frame" x="16" y="45" width="288" height="474"/>
                                 <color key="backgroundColor" red="0.19018546040000001" green="0.87048424930000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -137,7 +137,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hwh-Ff-IyD">
-                                                    <rect key="frame" x="15" y="0.0" width="234" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="226" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -154,7 +154,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Прогресс курса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On0-1p-hIS">
-                                <rect key="frame" x="95.5" y="36" width="129" height="21"/>
+                                <rect key="frame" x="95.5" y="16" width="129" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -189,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="ozA-7l-RrM">
-                                <rect key="frame" x="96" y="68" width="128" height="128"/>
+                                <rect key="frame" x="96" y="48" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="Hbr-4o-F7q"/>
                                     <constraint firstAttribute="width" secondItem="ozA-7l-RrM" secondAttribute="height" multiplier="1:1" id="M3I-Ks-0pB"/>
@@ -197,7 +197,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Меня зовут Александр. Я работаю IT и занимаюсь изучением программирования под iOs." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dPE-sS-Zbe">
-                                <rect key="frame" x="16" y="229" width="288" height="132"/>
+                                <rect key="frame" x="16" y="209" width="288" height="132"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="2hb-o0-soD"/>
